@@ -1,0 +1,122 @@
+{
+  "userId": 15887,
+  "policySetupVersion":0,
+  "displayCurrency": "USD",
+  "isApproved": false,
+  "annualSalaryAmount": 100000,
+  "annualSalaryCurrency": "USD",
+  "advancedEstimate": true,
+  "provider": "AIR_INC",
+  "packageTypeId": 1,
+  "homeCityId": 1,
+  "hostCityId": 3,
+  "groupId": 5,
+  "hrUserId": 12345,
+  "policyId": 4,
+  "moveStages": [
+    {
+      "stageId": 1,
+      "originId": 1,
+      "destinationId": 5,
+      "originCountryCode": "GBR",
+      "destinationCountryCode": "USA",
+      "originLatitude": 51.507351,
+      "originLongitude": -0.127758,
+      "destinationLatitude": 37.774929,
+      "destinationLongitude": -122.419416,
+      "estimatedMoveDate": "2016-12-30",
+      "items": [
+        {
+          "id": "cross_cultural_training",
+          "type": "Estimated",
+          "serviceType": "REGULAR",
+          "serviceId": 15,
+          "serviceCode":"CROSSCULTURALTRAINING",
+          "parameters": [
+            {
+              "parametersType": "CulturalTraining",
+              "serviceType": "CULTURE_ONE_TO_ONE",
+              "duration": 1
+            },
+            {
+              "parametersType": "CulturalTraining",
+              "serviceType": "CULTURE_GROUP",
+              "duration": 1
+            },
+            {
+              "parametersType": "CulturalTraining",
+              "serviceType": "LANGUAGE_ONE_TO_ONE",
+              "duration": 8
+            },
+            {
+              "parametersType": "CulturalTraining",
+              "serviceType": "LANGUAGE_GROUP",
+              "duration": 8
+            }
+          ]
+        },
+
+        {
+          "id": "flat_search",
+          "type": "Estimated",
+          "serviceType": "REGULAR",
+          "serviceId": 5,
+          "serviceCode":"FLATSEARCH",
+          "parameters": [
+            {
+              "parametersType": "HomeSearch",
+              "nbDays":3
+            }
+          ]
+        },
+
+        {
+          "id": "immigration",
+          "type": "Estimated",
+          "serviceType": "REGULAR",
+          "serviceId": 1,
+          "serviceCode":"IMMIGRATION",
+          "parameters": [
+            {
+              "parametersType": "Immigration",
+              "serviceType" : "WORK_PERMIT"
+            },
+            {
+              "parametersType": "Immigration",
+              "serviceType" : "VISA"
+            },
+            {
+              "parametersType": "Immigration",
+              "serviceType" : "DEPENDANT_VISA",
+              "nbDependants": 3
+            }
+          ]
+        },
+
+        {
+          "id": "serviced_apartment",
+          "type": "TaxableEstimated",
+          "serviceType": "REGULAR",
+          "serviceId": 3,
+          "serviceCode":"SERVICEDAPARTMENT",
+          "parameters": [
+            {
+              "parametersType": "ServicedApartment",
+              "nbRooms": 1,
+              "nbNights": 45
+            }
+          ]
+        },
+        {
+          "id": "custom_service",
+          "type": "Custom",
+          "serviceType": "CASH",
+          "name": "custom name",
+          "currency": "EUR",
+          "amount": 999,
+          "taxability": "MAYBE"
+        }
+      ]
+    }
+  ]
+}
